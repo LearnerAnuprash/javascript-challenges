@@ -17,38 +17,38 @@ For example, given "You must speak wisely." return "Speak wisely, you must."
 
 //My solution
 
-// function wiseSpeak(sentence) {
-//   return sentence;
-// }
+function wiseSpeak(sentence) {
+  let index;
 
-let sentence = "You must eat something.";
-let index;
+  const punctuation = sentence[sentence.length - 1];
+  // Stores the punctuation after the sentence ends
 
-for (let i = 0; i < sentence.length; i++) {
-  // Interates through each character
-  console.log(sentence[i]);
-}
+  const word = ["have", "must", "will", "can", "are"];
+  console.log("Provided sentence is : " + sentence);
 
-const punctuation = sentence[sentence.length - 1];
-// Stores the punctuation after the sentence ends
-
-word = ["have", "must", "will", "can", "are"];
-
-for (let i = 0; i < word.length; i++) {
-  if (
-    sentence.search(word[i]) === "have" ||
-    sentence.search(word[i]) === "must" ||
-    sentence.search(word[i]) === "will"
-  ) {
-    console.log("\n" + word[i] + " is present in the sentence\n");
-    index = sentence.search(word[i]);
-  } else if (
-    sentence.search(word[i]) === "can" ||
-    sentence.search(word[i]) === "are"
-  ) {
-    console.log("\n" + word[i] + " is present in the sentence\n");
-    index = sentence.search(word[i]);
+  for (let i = 0; i < word.length; i++) {
+    if (sentence.search(word[i]) != -1 && word[i].length == 4) {
+      //For 4 letter test cases
+      index = sentence.search(word[i]);
+      let firstPart = sentence.slice(index + 5, sentence.length - 1) + ", ";
+      firstPart =
+        firstPart[0].toUpperCase() + firstPart.slice(1, firstPart.length);
+      let secondPart = sentence.slice(0, index + 4);
+      secondPart = secondPart.toLowerCase();
+      let fullPart = firstPart + secondPart + punctuation;
+      return fullPart;
+    } else if (sentence.search(word[i]) != -1 && word[i].length == 3) {
+      //For 3 letter test cases
+      index = sentence.search(word[i]);
+      let firstPart = sentence.slice(index + 4, sentence.length - 1) + ", ";
+      firstPart =
+        firstPart[0].toUpperCase() + firstPart.slice(1, firstPart.length);
+      let secondPart = sentence.slice(0, index + 3);
+      secondPart = secondPart.toLowerCase();
+      let fullPart = firstPart + secondPart + punctuation;
+      return fullPart;
+    }
   }
 }
 
-console.log(index); // Index of first letter of target word
+console.log(wiseSpeak("You must speak wisely."));
