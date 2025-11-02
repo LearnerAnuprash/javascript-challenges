@@ -1,13 +1,14 @@
 # Code Vault (Javascript)
 
-Last updated: 2025-11-01 (git commit date not available)
+Last updated: 2025-11-02
 
-Directory structure
+Directory structure:
 
 ```
 javascript-challenges
 ├── leetcode
-│   └── lengthOfLastWord.js
+│   ├── lengthOfLastWord.js
+|   └── parkingSystem.ts
 ├── logic-vault
 │   ├── complementDNAFinder.js
 │   ├── emailSorter.js
@@ -17,6 +18,7 @@ javascript-challenges
 │   ├── spaceFuel.js
 │   ├── spookyCaseGenerator.js
 │   ├── wisePhraseGenerator.js
+|   └── signatureValidation.js
 │   └── package.json
 └── notes
     ├── arrayMethods.html
