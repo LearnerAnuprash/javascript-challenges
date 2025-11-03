@@ -18,7 +18,8 @@ javascript-challenges
 │   ├── spaceFuel.js
 │   ├── spookyCaseGenerator.js
 │   ├── wisePhraseGenerator.js
-|   └── signatureValidation.js
+|   ├── signatureValidation.js
+|   ├── countWords.js
 │   └── package.json
 └── notes
     ├── arrayMethods.html
@@ -31,6 +32,7 @@ Solved problems (checked)
 
 - LeetCode
   - [x] [leetcode/lengthOfLastWord.js](leetcode/lengthOfLastWord.js)
+  - [x] [leetcode/parkingSystem.ts](leetcode/parkingSystem.ts)
 - Logic Vault
   - [x] [logic-vault/complementDNAFinder.js](logic-vault/complementDNAFinder.js)
   - [x] [logic-vault/emailSorter.js](logic-vault/emailSorter.js)
@@ -40,6 +42,8 @@ Solved problems (checked)
   - [x] [logic-vault/spaceFuel.js](logic-vault/spaceFuel.js)
   - [x] [logic-vault/spookyCaseGenerator.js](logic-vault/spookyCaseGenerator.js)
   - [x] [logic-vault/wisePhraseGenerator.js](logic-vault/wisePhraseGenerator.js)
+  - [x] [logic-vault/signatureValidation.js](logic-vault/signatureValidation.js)
+  - [x] [logic-vault/countWords.js](logic-vault/countWords.js)
 - Notes
   - [x] [notes/arrayMethods.html](notes/arrayMethods.html)
   - [x] [notes/arrayMethods.js](notes/arrayMethods.js)
